@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="60" viewBox="0 0 880 60" role="img" aria-label="divider"><defs>
+    <filter id="gloww" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softgloww" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feColorMatrix in="b" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 0"/>
+    </filter>
+    <linearGradient id="borderw" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00e5ff">
+        <animate attributeName="stop-color"
+          values="#00e5ff;#ff2bd6;#39ff14;#00e5ff" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.5" stop-color="#ff2bd6">
+        <animate attributeName="stop-color"
+          values="#ff2bd6;#39ff14;#00e5ff;#ff2bd6" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#39ff14">
+        <animate attributeName="stop-color"
+          values="#39ff14;#00e5ff;#ff2bd6;#39ff14" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <pattern id="scanw" width="3" height="3" patternUnits="userSpaceOnUse">
+      <rect width="3" height="3" fill="none"/>
+      <rect width="3" height="1" y="0" fill="#ffffff" opacity="0.035"/>
+    </pattern>
+    <radialGradient id="vigw" cx="50%" cy="0%" r="120%">
+      <stop offset="0" stop-color="#0a0f18"/>
+      <stop offset="1" stop-color="#05070d"/>
+    </radialGradient>
+    <linearGradient id="wg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00e5ff" stop-opacity="0"/><stop offset="0.5" stop-color="#39ff14"/><stop offset="1" stop-color="#ff2bd6" stop-opacity="0"/></linearGradient></defs><path d="M0.0,30.0 L8.0,32.0 L16.0,34.0 L24.0,35.7 L32.0,37.1 L40.0,38.2 L48.0,38.8 L56.0,39.0 L64.0,38.7 L72.0,38.0 L80.0,36.8 L88.0,35.3 L96.0,33.5 L104.0,31.5 L112.0,29.5 L120.0,27.5 L128.0,25.6 L136.0,23.9 L144.0,22.6 L152.0,21.6 L160.0,21.1 L168.0,21.0 L176.0,21.4 L184.0,22.3 L192.0,23.5 L200.0,25.1 L208.0,27.0 L216.0,29.0 L224.0,31.0 L232.0,33.0 L240.0,34.9 L248.0,36.5 L256.0,37.7 L264.0,38.6 L272.0,39.0 L280.0,38.9 L288.0,38.4 L296.0,37.4 L304.0,36.1 L312.0,34.4 L320.0,32.5 L328.0,30.5 L336.0,28.5 L344.0,26.5 L352.0,24.7 L360.0,23.2 L368.0,22.0 L376.0,21.3 L384.0,21.0 L392.0,21.2 L400.0,21.8 L408.0,22.9 L416.0,24.3 L424.0,26.0 L432.0,28.0 L440.0,30.0 L448.0,32.0 L456.0,34.0 L464.0,35.7 L472.0,37.1 L480.0,38.2 L488.0,38.8 L496.0,39.0 L504.0,38.7 L512.0,38.0 L520.0,36.8 L528.0,35.3 L536.0,33.5 L544.0,31.5 L552.0,29.5 L560.0,27.5 L568.0,25.6 L576.0,23.9 L584.0,22.6 L592.0,21.6 L600.0,21.1 L608.0,21.0 L616.0,21.4 L624.0,22.3 L632.0,23.5 L640.0,25.1 L648.0,27.0 L656.0,29.0 L664.0,31.0 L672.0,33.0 L680.0,34.9 L688.0,36.5 L696.0,37.7 L704.0,38.6 L712.0,39.0 L720.0,38.9 L728.0,38.4 L736.0,37.4 L744.0,36.1 L752.0,34.4 L760.0,32.5 L768.0,30.5 L776.0,28.5 L784.0,26.5 L792.0,24.7 L800.0,23.2 L808.0,22.0 L816.0,21.3 L824.0,21.0 L832.0,21.2 L840.0,21.8 L848.0,22.9 L856.0,24.3 L864.0,26.0 L872.0,28.0 L880.0,30.0 L888.0,32.0 L896.0,34.0 L904.0,35.7 L912.0,37.1 L920.0,38.2 L928.0,38.8 L936.0,39.0 L944.0,38.7 L952.0,38.0 L960.0,36.8 L968.0,35.3 L976.0,33.5 L984.0,31.5 L992.0,29.5 L1000.0,27.5 L1008.0,25.6 L1016.0,23.9 L1024.0,22.6 L1032.0,21.6 L1040.0,21.1 L1048.0,21.0 L1056.0,21.4 L1064.0,22.3 L1072.0,23.5 L1080.0,25.1 L1088.0,27.0 L1096.0,29.0" fill="none" stroke="url(#wg)" stroke-width="2.4" opacity="0.9" filter="url(#gloww)"><animateTransform attributeName="transform" type="translate" from="0 0" to="-220 0" dur="7s" repeatCount="indefinite"/></path><path d="M0.0,35.9 L8.0,35.9 L16.0,35.4 L24.0,34.3 L32.0,32.8 L40.0,31.0 L48.0,29.1 L56.0,27.3 L64.0,25.8 L72.0,24.7 L80.0,24.1 L88.0,24.1 L96.0,24.6 L104.0,25.7 L112.0,27.2 L120.0,29.0 L128.0,30.9 L136.0,32.7 L144.0,34.2 L152.0,35.3 L160.0,35.9 L168.0,35.9 L176.0,35.4 L184.0,34.3 L192.0,32.8 L200.0,31.0 L208.0,29.1 L216.0,27.3 L224.0,25.8 L232.0,24.7 L240.0,24.1 L248.0,24.1 L256.0,24.6 L264.0,25.7 L272.0,27.2 L280.0,29.0 L288.0,30.9 L296.0,32.7 L304.0,34.2 L312.0,35.3 L320.0,35.9 L328.0,35.9 L336.0,35.4 L344.0,34.3 L352.0,32.8 L360.0,31.0 L368.0,29.1 L376.0,27.3 L384.0,25.8 L392.0,24.7 L400.0,24.1 L408.0,24.1 L416.0,24.6 L424.0,25.7 L432.0,27.2 L440.0,29.0 L448.0,30.9 L456.0,32.7 L464.0,34.2 L472.0,35.3 L480.0,35.9 L488.0,35.9 L496.0,35.4 L504.0,34.3 L512.0,32.8 L520.0,31.0 L528.0,29.1 L536.0,27.3 L544.0,25.8 L552.0,24.7 L560.0,24.1 L568.0,24.1 L576.0,24.6 L584.0,25.7 L592.0,27.2 L600.0,29.0 L608.0,30.9 L616.0,32.7 L624.0,34.2 L632.0,35.3 L640.0,35.9 L648.0,35.9 L656.0,35.4 L664.0,34.3 L672.0,32.8 L680.0,31.0 L688.0,29.1 L696.0,27.3 L704.0,25.8 L712.0,24.7 L720.0,24.1 L728.0,24.1 L736.0,24.6 L744.0,25.7 L752.0,27.2 L760.0,29.0 L768.0,30.9 L776.0,32.7 L784.0,34.2 L792.0,35.3 L800.0,35.9 L808.0,35.9 L816.0,35.4 L824.0,34.3 L832.0,32.8 L840.0,31.0 L848.0,29.1 L856.0,27.3 L864.0,25.8 L872.0,24.7 L880.0,24.1 L888.0,24.1 L896.0,24.6 L904.0,25.7 L912.0,27.2 L920.0,29.0 L928.0,30.9 L936.0,32.7 L944.0,34.2 L952.0,35.3 L960.0,35.9 L968.0,35.9 L976.0,35.4 L984.0,34.3 L992.0,32.8 L1000.0,31.0 L1008.0,29.1 L1016.0,27.3 L1024.0,25.8 L1032.0,24.7 L1040.0,24.1" fill="none" stroke="url(#wg)" stroke-width="2.4" opacity="0.5" filter="url(#gloww)"><animateTransform attributeName="transform" type="translate" from="0 0" to="160 0" dur="5s" repeatCount="indefinite"/></path><g filter="url(#gloww)"><path d="M433.0 30.0 L440.0 23.0 L447.0 30.0 L440.0 37.0 Z" fill="#39ff14"><animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/></path></g></svg>

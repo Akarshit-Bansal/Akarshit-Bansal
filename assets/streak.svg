@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="170" viewBox="0 0 880 170" role="img" aria-label="streak card"><defs>
+    <filter id="glows" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglows" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feColorMatrix in="b" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 0"/>
+    </filter>
+    <linearGradient id="borders" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00e5ff">
+        <animate attributeName="stop-color"
+          values="#00e5ff;#ff2bd6;#39ff14;#00e5ff" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.5" stop-color="#ff2bd6">
+        <animate attributeName="stop-color"
+          values="#ff2bd6;#39ff14;#00e5ff;#ff2bd6" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#39ff14">
+        <animate attributeName="stop-color"
+          values="#39ff14;#00e5ff;#ff2bd6;#39ff14" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <pattern id="scans" width="3" height="3" patternUnits="userSpaceOnUse">
+      <rect width="3" height="3" fill="none"/>
+      <rect width="3" height="1" y="0" fill="#ffffff" opacity="0.035"/>
+    </pattern>
+    <radialGradient id="vigs" cx="50%" cy="0%" r="120%">
+      <stop offset="0" stop-color="#0a0f18"/>
+      <stop offset="1" stop-color="#05070d"/>
+    </radialGradient>
+    </defs><style>
+           @keyframes fin{from{opacity:0}to{opacity:1}}
+           @keyframes ring{from{stroke-dashoffset:339}to{stroke-dashoffset:64}}
+           .seg{opacity:0;animation:fin .8s ease forwards}
+           .rng{stroke-dasharray:339;stroke-dashoffset:339;animation:ring 1.4s .3s ease forwards}
+           text{font-family:'JetBrains Mono','Fira Code','SF Mono',ui-monospace,'Cascadia Code',Consolas,monospace}
+         </style><rect x="2" y="2" width="876" height="166" rx="14" fill="url(#vigs)" stroke="url(#borders)" stroke-width="2.5" filter="url(#glows)"/><rect x="2" y="2" width="876" height="166" rx="14" fill="url(#scans)"/><g class="seg" style="animation-delay:0.20s"><text x="146.66666666666666" y="81.0" text-anchor="middle" font-size="40" font-weight="800" fill="#00e5ff" filter="url(#glows)">1,295</text><text x="146.66666666666666" y="109.0" text-anchor="middle" font-size="12" fill="#c9f7e8">Total Contributions</text></g><line x1="293.3333333333333" y1="34" x2="293.3333333333333" y2="136" stroke="#00e5ff" stroke-width="1" opacity="0.25"/><g class="seg" style="animation-delay:0.35s"><circle cx="440.0" cy="77.0" r="46" fill="none" stroke="#16281f" stroke-width="7"/><circle class="rng" cx="440.0" cy="77.0" r="46" fill="none" stroke="#39ff14" stroke-width="7" stroke-linecap="round" filter="url(#glows)" transform="rotate(-90 440.0 77.0)"/><text x="440.0" y="79.0" text-anchor="middle" font-size="30" font-weight="800" fill="#39ff14" filter="url(#glows)">24</text><text x="440.0" y="146" text-anchor="middle" font-size="11.5" fill="#c9f7e8">Current Streak · days</text></g><line x1="586.6666666666666" y1="34" x2="586.6666666666666" y2="136" stroke="#00e5ff" stroke-width="1" opacity="0.25"/><g class="seg" style="animation-delay:0.50s"><text x="733.3333333333333" y="81.0" text-anchor="middle" font-size="40" font-weight="800" fill="#ff2bd6" filter="url(#glows)">57</text><text x="733.3333333333333" y="109.0" text-anchor="middle" font-size="12" fill="#c9f7e8">Longest Streak · days</text></g></svg>

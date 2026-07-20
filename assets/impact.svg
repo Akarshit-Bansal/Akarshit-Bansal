@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="150" viewBox="0 0 880 150" role="img" aria-label="impact stats"><defs>
+    <filter id="glowi" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglowi" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feColorMatrix in="b" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 0"/>
+    </filter>
+    <linearGradient id="borderi" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00e5ff">
+        <animate attributeName="stop-color"
+          values="#00e5ff;#ff2bd6;#39ff14;#00e5ff" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="0.5" stop-color="#ff2bd6">
+        <animate attributeName="stop-color"
+          values="#ff2bd6;#39ff14;#00e5ff;#ff2bd6" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="1" stop-color="#39ff14">
+        <animate attributeName="stop-color"
+          values="#39ff14;#00e5ff;#ff2bd6;#39ff14" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <pattern id="scani" width="3" height="3" patternUnits="userSpaceOnUse">
+      <rect width="3" height="3" fill="none"/>
+      <rect width="3" height="1" y="0" fill="#ffffff" opacity="0.035"/>
+    </pattern>
+    <radialGradient id="vigi" cx="50%" cy="0%" r="120%">
+      <stop offset="0" stop-color="#0a0f18"/>
+      <stop offset="1" stop-color="#05070d"/>
+    </radialGradient>
+    </defs><style>
+           @keyframes rise{0%{opacity:0;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+           @keyframes gl{0%,100%{opacity:.8}50%{opacity:1}}
+           .tile{opacity:0;animation:rise .6s cubic-bezier(.2,.8,.2,1) forwards}
+           .num{animation:gl 2.6s ease-in-out infinite}
+           text{font-family:'JetBrains Mono','Fira Code','SF Mono',ui-monospace,'Cascadia Code',Consolas,monospace}
+         </style><rect x="2" y="2" width="876" height="146" rx="14" fill="url(#vigi)" stroke="url(#borderi)" stroke-width="2.5" filter="url(#glowi)"/><rect x="2" y="2" width="876" height="146" rx="14" fill="url(#scani)"/><text x="24" y="34" font-size="13" font-weight="700" letter-spacing="2" fill="#6f8ea0">// IMPACT</text><g class="tile" style="animation-delay:0.15s"><rect x="24" y="52" width="194.5" height="78" rx="10" fill="#39ff14" opacity="0.08"/><rect x="24" y="52" width="194.5" height="78" rx="10" fill="none" stroke="#39ff14" stroke-width="1.3" opacity="0.55"/><text class="num" x="121.25" y="98" text-anchor="middle" font-size="34" font-weight="800" fill="#39ff14" filter="url(#glowi)">3,000+</text><text x="121.25" y="122" text-anchor="middle" font-size="12" fill="#c9f7e8">records in production MIS</text></g><g class="tile" style="animation-delay:0.27s"><rect x="236.5" y="52" width="194.5" height="78" rx="10" fill="#00e5ff" opacity="0.08"/><rect x="236.5" y="52" width="194.5" height="78" rx="10" fill="none" stroke="#00e5ff" stroke-width="1.3" opacity="0.55"/><text class="num" x="333.75" y="98" text-anchor="middle" font-size="34" font-weight="800" fill="#00e5ff" filter="url(#glowi)">1,500+</text><text x="333.75" y="122" text-anchor="middle" font-size="12" fill="#c9f7e8">CRM customers served</text></g><g class="tile" style="animation-delay:0.39s"><rect x="449.0" y="52" width="194.5" height="78" rx="10" fill="#ff2bd6" opacity="0.08"/><rect x="449.0" y="52" width="194.5" height="78" rx="10" fill="none" stroke="#ff2bd6" stroke-width="1.3" opacity="0.55"/><text class="num" x="546.25" y="98" text-anchor="middle" font-size="34" font-weight="800" fill="#ff2bd6" filter="url(#glowi)">~60%</text><text x="546.25" y="122" text-anchor="middle" font-size="12" fill="#c9f7e8">queries auto-resolved (AI)</text></g><g class="tile" style="animation-delay:0.51s"><rect x="661.5" y="52" width="194.5" height="78" rx="10" fill="#ffcc33" opacity="0.08"/><rect x="661.5" y="52" width="194.5" height="78" rx="10" fill="none" stroke="#ffcc33" stroke-width="1.3" opacity="0.55"/><text class="num" x="758.75" y="98" text-anchor="middle" font-size="34" font-weight="800" fill="#ffcc33" filter="url(#glowi)">239+</text><text x="758.75" y="122" text-anchor="middle" font-size="12" fill="#c9f7e8">DSA problems solved</text></g></svg>

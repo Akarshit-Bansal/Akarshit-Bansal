@@ -1,0 +1,7 @@
+requests>=2.31
+beautifulsoup4>=4.12
+pillow>=10.0
+numpy>=1.26
+opencv-python-headless>=4.8
+# Optional: uncomment for background removal on the portrait (large download)
+# rembg>=2.0.50
